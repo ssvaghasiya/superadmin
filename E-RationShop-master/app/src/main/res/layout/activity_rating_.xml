@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rating_Activity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:text="Providing food without problem?"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/rating_1"
+            android:numStars="5"
+
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"></RatingBar>
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:text="Providing food without problem?"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <RatingBar
+            android:numStars="5"
+            android:id="@+id/rating_2"
+
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"></RatingBar>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="381dp"
+        android:layout_height="114dp">
+
+        <TextView
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:text="Providing food without problem?"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/rating_3"
+            android:numStars="5"
+
+            android:layout_width="293dp"
+            android:layout_height="72dp"></RatingBar>
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:text="Providing food without problem?"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/rating_4"
+            android:numStars="5"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"></RatingBar>
+
+    </TableRow>
+
+    <Button android:text="Submit" android:id="@+id/rating_btn"  />
+
+
+</TableLayout>

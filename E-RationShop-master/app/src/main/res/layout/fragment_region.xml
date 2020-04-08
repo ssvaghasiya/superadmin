@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TableRow
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Region Name : "
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_region"
+            android:layout_width="239dp"
+            android:layout_height="66dp"
+            android:hint="region name">
+
+
+        </EditText>
+
+    </TableRow>
+    <TableRow
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/t6"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginRight="4dp"
+            android:text="Pin Code : ">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_region_pin"
+            android:layout_width="237dp"
+            android:layout_height="69dp"
+            android:numeric="integer"
+            android:maxLength="6"
+            android:hint="pincode">
+
+
+        </EditText>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Open Position available ? "
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <CheckBox
+            android:layout_gravity="center"
+            android:id="@+id/check_rgn">
+
+        </CheckBox>
+
+
+    </TableRow>
+<!--    <TableRow-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content">-->
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+
+        android:text="Submit"
+        android:textAlignment="center">
+
+    </Button>
+
+<!--    </TableRow>-->
+
+</TableLayout>

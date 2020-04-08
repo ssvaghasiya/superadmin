@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ration.ui.home.HomeFragment"
+        android:label="Stock Details"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="com.example.ration.ui.requests.Request_Fragment"
+        android:label="Requests"
+        tools:layout="@layout/request_fragment" />
+
+    <fragment
+        android:id="@+id/nav_ration_shop_details"
+        android:name="com.example.ration.ui.ration_shop_details.Ration_Shop_Details_Fragment"
+        android:label="Ration Shop Details"
+        tools:layout="@layout/fragment_ration_details" />
+
+    <fragment
+        android:id="@+id/nav_stock_history"
+        android:name="com.example.ration.ui.stock_history.Stock_history_fragment"
+        android:label="Stock History"
+        tools:layout="@layout/fragment_stock_history" />
+
+    <fragment
+        android:id="@+id/nav_blacklisted_shops"
+        android:name="com.example.ration.ui.black_listed_shops.BalckListed_fragment"
+        android:label="Black Listed Shops"
+        tools:layout="@layout/fragment_blacklisted_shops" />
+
+
+    <fragment
+        android:id="@+id/nav_regions"
+        android:name="com.example.ration.ui.gallery.Region_Fragment"
+        android:label="Add Region"
+        tools:layout="@layout/fragment_region" />
+
+    <fragment
+        android:id="@+id/nav_providestock"
+        android:name="com.example.ration.ui.providestock.StockProvide"
+        android:label="Stock Provide"
+        tools:layout="@layout/fragment_provide_stock" />
+
+
+</navigation>

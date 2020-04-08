@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="16dp"
+        android:text="Month"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:text="Year"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="349dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:text="Item_Name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:text="Quantity"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:text="Remaining"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp"></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclviewforhome"
+        android:layout_width="347dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <!--    <TableLayout-->
+<!--        android:id="@+id/tableLayout"-->
+<!--        android:layout_width="331dp"-->
+<!--        android:layout_height="256dp"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:layout_marginEnd="53dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner">-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text="Item"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text="Quantity"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text="Remaining"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text="Price"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow android:layout_width="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="82dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:text=""-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="19sp"></TextView>-->
+<!--        </TableRow>-->
+
+
+<!--    </TableLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

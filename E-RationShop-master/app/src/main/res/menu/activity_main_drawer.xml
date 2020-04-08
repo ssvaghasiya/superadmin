@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_request"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Requests" />
+        <item
+            android:id="@+id/nav_ration_shop_details"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Ration shop Details" />
+        <item
+            android:id="@+id/nav_stock_history"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Stock History" />
+        <item
+            android:id="@+id/nav_blacklisted_shops"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="BlackListed Shops" />
+    </group>
+
+    <item android:title="Regions">
+        <menu>
+            <item
+                android:id="@+id/nav_regions"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add Region" />
+<!--            <item-->
+<!--                android:id="@+id/nav_"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="@string/menu_send" />-->
+
+            <item
+                android:id="@+id/nav_providestock"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Provide Stock" />
+        </menu>
+    </item>
+
+</menu>

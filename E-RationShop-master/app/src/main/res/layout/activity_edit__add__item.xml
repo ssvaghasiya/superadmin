@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        tools:context=".Edit_Add_Item">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/item_name_t1"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text="Item Name : "
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:id="@+id/item_name_x1"
+            android:text=""
+             />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/item_name_t2"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text="Quantity : "
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:id="@+id/item_quan"
+            android:text=""
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/item_name_t4"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text="Remaining : "
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:id="@+id/item_remain"
+            android:text=""
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/item_name_t3"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:text="Price : "
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:id="@+id/item_price"
+            android:text=""
+            />
+
+    </TableRow>
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:id="@+id/edit_btn_item"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent">
+
+    </Button>
+
+
+
+
+</TableLayout>

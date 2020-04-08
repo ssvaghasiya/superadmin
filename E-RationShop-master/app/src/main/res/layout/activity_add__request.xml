@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Request">
+
+    <TableRow
+
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:text="Name : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/name_add"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:hint="Name">
+
+        </EditText>
+    </TableRow>
+    <TableRow
+
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="62dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:text="Address : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/address_add"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Address"
+            android:inputType="textMultiLine" />
+
+
+    </TableRow>
+    <TableRow
+
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:text="Contact No : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:id="@+id/phn_add"
+            android:hint="Contact No">
+
+        </EditText>
+    </TableRow>
+    <TableRow
+
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:text="Email : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="197dp"
+            android:id="@+id/email_add"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow
+
+        android:layout_height="43dp">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="2dp"
+            android:text="Qualification : "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_qual"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+
+        </Spinner>
+    </TableRow>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_add"
+        android:text="Submit">
+
+    </Button>
+
+
+</TableLayout>
